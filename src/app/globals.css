@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+@media (max-width: 768px) {
+  .vikimg {  /* Adjust selector as needed */
+    width: 240px;  /* Desired mobile width */
+  }
+}
+@media (max-width: 768px) {
+  .vikimg2 {  /* Adjust selector as needed */
+    width: 300px;  /* Desired mobile width */
+  }
+}

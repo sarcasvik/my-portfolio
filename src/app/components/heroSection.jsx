@@ -33,8 +33,8 @@ const heroSection = () => {
             </div>
           </h1>
 
-          <p className="text-[#ADB7BE] text-lg lg:text-xl sm:text-justify my-6 sm:mb-14">
-            I am a Software Dev specializing in building applications. I have a passion for Web development and design, moreover my work experience also includes scripting and Database Management.
+          <p className="text-[#ADB7BE] text-lg sm:text-xl lg:text-2xl sm:text-justify my-6 sm:mb-14">
+          A software developer with a passion for crafting beautiful, user-friendly applications. Skilled in scripting and database management to build robust solutions.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} className="flex justify-center md:hidden rounded-xl height-300 width-300">
                 <Image

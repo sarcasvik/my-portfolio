@@ -47,10 +47,10 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 mt-12 md:mt-12 py-28 gap-4 relative"
+      className="grid md:grid-cols-2 mt-10 md:mt-24 py-20 md:py-28 gap-4 relative"
     >
       <div className="z-10">
-        <h5 className="text-xl md:text-2xl font-bold text-white my-2">
+        <h5 className="text-2xl md:text-3xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md text-justify">
@@ -74,7 +74,7 @@ const EmailSection = () => {
             target="_blank"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=satvikmaheshwari10@gmail.com"
           >
-            <Image src={gmailIcon} alt="gmail Icon" />
+            <Image src={gmailIcon} width={48} height={48} alt="gmail Icon" />
           </Link>
         </div>
       </div>
@@ -84,7 +84,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="email"
-              className="text-white block mb-2 text-sm font-medium"
+              className="text-white block mb-2 text-sm md:text-base font-medium"
             >
               Your email
             </label>
@@ -104,7 +104,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="subject"
-              className="text-white block text-sm mb-2 font-medium"
+              className="text-white block text-sm md:text-base mb-2 font-medium"
             >
               Subject
             </label>
@@ -124,7 +124,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="message"
-              className="text-white block text-sm mb-2 font-medium"
+              className="text-white block text-sm md:text-base mb-2 font-medium"
             >
               Message
             </label>

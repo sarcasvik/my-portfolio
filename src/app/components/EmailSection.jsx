@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/images/github-icon.svg";
 import LinkedinIcon from "../../../public/images/linkedin-icon.svg";
+import gmailIcon from "../../../public/images/gmail-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 import emailjs from '@emailjs/browser';
-
+import { motion } from "framer-motion";
 const EmailSection = () => {
   
   //const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -52,7 +53,7 @@ const EmailSection = () => {
         <h5 className="text-xl md:text-2xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-justify">
           {" "}
           I&apos;m always looking for exciting opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
@@ -67,6 +68,13 @@ const EmailSection = () => {
             href="https://www.linkedin.com/in/satvik-maheshwari-7857441a6/"
           >
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link
+            className="ml-1"
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=satvikmaheshwari10@gmail.com"
+          >
+            <Image src={gmailIcon} alt="gmail Icon" />
           </Link>
         </div>
       </div>
@@ -131,12 +139,12 @@ const EmailSection = () => {
               placeholder="Let's talk about..."
             />
           </div>
-          <button
+          <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
             type="submit"
-            className="text-white font-medium py-2.5 px-5 rounded-lg mx-auto bg-[#11001c] w-1/2 hover:bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 border transition-all duration-700 flex justify-center align-middle content-center"
+            className="text-white font-medium py-2.5 px-5 rounded-lg mx-auto bg-[#11001c] w-60 hover:bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 border hover:border-black  transition-all flex justify-center align-middle content-center"
           >
             Send Message
-          </button>
+          </motion.button>
         </form>
         <Toaster />
       </div>

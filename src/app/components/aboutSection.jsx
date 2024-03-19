@@ -2,7 +2,7 @@
 import React, { useTransition, useState }  from 'react'
 import Image from 'next/image';
 import TabButton from "./TabButton";
-//import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -69,7 +69,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li className='hover:text-pink-700 text-lg'>Thapar Institute of Engineering and Technology, Patiala</li>
         <ul><li>B.E. Computer Engineering</li>
-        <li>cgpa - 8.22</li>
+        <li>CGPA - 8.22</li>
         <li>Year - [2020-24]</li></ul>
         <li className='hover:text-pink-700 text-lg'>Vivekanand School, New Delhi</li>
         <ul><li>12th, Science</li>
@@ -101,19 +101,22 @@ const aboutSection = () => {
   return (
     <section className='text-white mt-36 pt-10' id='about'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-          <Image 
-          className="vikimg2 transition-all duration-500 rounded-2xl cursor-imageurl filter sm:grayscale  hover:grayscale-0  shadow-lg  shadow-pink-500 " 
-          src="/images/vik2.jpg"
-          alt='my image'
-          width={400}
-          height={400}
-          />
+          <motion.div whileHover={{ scale: 1.025 }} >
+            <Image
+            className="vikimg2 transition-all duration-500 rounded-2xl cursor-imageurl filter sm:grayscale  hover:grayscale-0  shadow-lg  shadow-pink-500 "
+            src="/images/vik2.jpg"
+            alt='my image'
+            width={400}
+            height={400}
+            />
+          </motion.div>
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className='text-5xl font-bold text-white mb-4'> About Me</h2>
             <p className='text-base lg:text-lg'>
             I am a Software/Web developer with a passion for creating interactive and responsive web applications. I have experience working with HTML, CSS, JavaScript, React.js, Next.js, MySQL, PostgreSQL, Shellscript, and C++. I am a quick learner, always looking to expand my knowledge and skill set. I am excited to work with others to create amazing applications.
             </p>
             <div className="flex flex-row justify-start mt-8 sm:gap-4 sm:text-lg">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95, rotate:90 }}>
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -121,27 +124,29 @@ const aboutSection = () => {
               {" "}
               Skills{" "}
             </TabButton>
-            <TabButton
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95, rotate:90 }}><TabButton
               selectTab={() => handleTabChange("work")}
               active={tab === "work"}
             >
               {" "}
               Work Exp{" "}
-            </TabButton>
-            <TabButton
+            </TabButton></motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95, rotate:90 }}><TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
               Education{" "}
-            </TabButton>
+            </TabButton></motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95, rotate:90 }}>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton></motion.div>
           </div>
           <div className="mt-8 ml-4">
             {TAB_DATA.find((t) => t.id === tab).content}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import NavLink from './navLink';
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/solid';
 import MenuOverlay from './menuOverlay';
-
+import { motion } from "framer-motion";
 const navLinks = [
     {
         title:"About",
@@ -25,7 +25,7 @@ const navbar = () => {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#3a015c] bg-opacity-80'>
         <div className='flex items-center flex-wrap justify-between mx-auto px-4 py-2'>
-            <Link scroll={true} className='flex items-center' href={"#hero"}><Image className='rounded-full' src="/images/bitmoji.png" alt = "logo" width={55} height={60}/><div className="size px-2 font-extrabold text-lg font-mono md:text-xl lg:text-2xl"><h1>SATVIK&apos;s PORTFOLIO</h1></div></Link>
+            <Link scroll={true} className='flex items-center' href={"#hero"}><Image className='rounded-full' src="/images/bitmoji.png" alt = "logo" width={55} height={60}/><div className="size px-2 font-extrabold text-lg font-mono md:text-xl lg:text-2xl"><motion.h1 whileHover={{scale: 1.05}}>SATVIK&apos;s PORTFOLIO</motion.h1></div></Link>
             {/* mobile view */}
             <div className="mobile-menu block md:hidden font-semibold font-mono">
           {!navbarOpen ? (

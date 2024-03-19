@@ -37,6 +37,14 @@ const projectsData = [
     tag: ["All", "Others"],
     gitUrl: "https://github.com/sarcasvik/E-commerce_sales_Dashboard",
   },
+  {
+    id: 5,
+    title: "IntelliGROW",
+    description: "Led a team of 5 in developing a fully automated Smart Irrigation and Fertilization System using IOT and Cloud. Combining advanced sensors like NPK, temperature, and moisture sensors for monitoring crop health, optimizing water and nutrient usage, and preventing water wastage through a user-friendly web application.",
+    image: "/images/5.jpg",
+    tag: ["All", "Others"],
+    gitUrl: "https://github.com/sarcasvik/IntelliGROW",
+  },
 
 ];
 

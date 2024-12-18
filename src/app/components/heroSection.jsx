@@ -44,7 +44,7 @@ const heroSection = () => {
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Link href="#contact" scroll={true} className="px-3 sm:px-6 py-3 rounded-full mr-4 bg-[#11001c] hover:bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 border hover:border-black transition-all text-white ">Contact Me</Link></motion.button>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link href="https://drive.google.com/file/d/1It6tdymxL5inR7bF1FfUEeDUujDJbkdV/view?usp=sharing" target="_blank" download={true} className="px-3 sm:px-6 py-3 rounded-full mr-4 bg-[#11001c] hover:bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 border hover:border-black  text-white">Download CV</Link>
+          <Link href="https://drive.google.com/file/d/1RCV1G_knThPloQNX5eLYYE9Fe2yKnw1k/view?usp=sharing" target="_blank" download={true} className="px-3 sm:px-6 py-3 rounded-full mr-4 bg-[#11001c] hover:bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 border hover:border-black  text-white">Download CV</Link>
           </motion.button>
         </motion.div>
         

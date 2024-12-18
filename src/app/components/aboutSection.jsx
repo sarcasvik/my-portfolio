@@ -58,7 +58,10 @@ const TAB_DATA = [
         <ul className="list-disc pl-2"><li>Integrated diverse APIs and plugins for optimized website performance and functionality. Implemented AWS S3 connectivity via API Gateway to bolster data management capabilities.</li>
         <li>Collaborated with clients via Jira, translating Figma designs into responsive website features. Utilized Bubble.io platform for superior user experiences and streamlined development.</li>
         </ul>
-        
+        <li className='hover:text-pink-700 text-lg'>Axis Bank, <span className='text-slate-500 text-sm'>Deputy Manager</span></li>
+        <ul className="list-disc pl-2"><li>Utilized Python for modeling and SAS and SQL as data analytical tools to monitor credit risk.</li>
+        <li>Developed and implemented data-driven strategies to monitor and  enhance credit risk for personal loans sector.</li>
+        </ul>
       </ul>
     ),
   },
@@ -69,7 +72,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li className='hover:text-pink-700 text-lg'>Thapar Institute of Engineering and Technology, Patiala</li>
         <ul><li>B.E. Computer Engineering</li>
-        <li>CGPA - 8.22</li>
+        <li>CGPA - 8.47</li>
         <li>Year - [2020-24]</li></ul>
         <li className='hover:text-pink-700 text-lg'>Vivekanand School, New Delhi</li>
         <ul><li>12th, Science</li>
